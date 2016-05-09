@@ -24,7 +24,7 @@ The Theme features:
 ## Basic Setup
 
 1. [Install Jekyll](http://jekyllrb.com)
-2. Fork the [Will Jekyll Template](https://github.com/willianjusten/will-jekyll-template/fork)
+2. Fork the [Cards Jekyll Template](https://github.com/willianjusten/cards-jekyll-template/fork)
 3. Clone the repo you just forked.
 4. Edit `_config.yml` to personalize your site.
 5. Check out the sample posts in `_posts` to see examples for assigning categories and tags, and other YAML data.
