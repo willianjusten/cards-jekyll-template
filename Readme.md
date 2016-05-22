@@ -21,6 +21,8 @@ The Theme features:
 - Color Customization
 - Info Customization
 
+If you want to see this template in real action, take a look at my [original site](http://willianjusten.com.br/).
+
 ## Basic Setup
 
 1. [Install Jekyll](http://jekyllrb.com)
