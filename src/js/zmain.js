@@ -63,7 +63,7 @@ function scrollBanner() {
   var headerText = document.querySelector('.header-post .content')
   scrollPos = window.scrollY;
 
-  if (scrollPos <= 500) {
+  if (scrollPos <= 500 && headerText != null) {
       headerText.style.transform =  "translateY(" + (-scrollPos/3) +"px" + ")";
       headerText.style.opacity = 1-(scrollPos/500);
   }
