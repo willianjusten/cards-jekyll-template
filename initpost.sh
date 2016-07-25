@@ -46,7 +46,7 @@ POSTPATH="${BINPATH}/_posts"
 DIST_FOLDER="$POSTPATH"
 
 # Set your blog URL
-BLOG_URL="http://willianjusten.com.br"
+BLOG_URL="https://willianjusten.com.br"
 
 # Set your assets URL
 ASSETS_URL="assets/img/"

@@ -1,4 +1,4 @@
-## Cards Jekyll Template - [Demo](http://willianjusten.com.br/cards-jekyll-template)
+## Cards Jekyll Template - [Demo](https://willianjusten.com.br/cards-jekyll-template)
 
 ![Screenshot](screenshot.png)
 
@@ -107,10 +107,6 @@ In order to compile the assets and run Jekyll on local you need to follow those 
 - Run `npm install`
 - Run `npm install -g gulp gulp-cli` (maybe you need to use `sudo` command)
 - Run `gulp`
-
-## Windows 10 Step
-
-If you use Windows 10, change this line on [gulpfile.js](https://github.com/willianjusten/will-jekyll-template/blob/gh-pages/gulpfile.js#L23) to `spawn('jekyll.bat', ['build'])`.
 
 ## Questions
 
