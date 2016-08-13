@@ -54,29 +54,9 @@ gplus_username:  lorem_ipsum
 disqus_username: lorem_ipsum
 ```
 
-You have to find and replace '</> Anon Developer', '</> AD' in assets/css/main.css
-
-```
-@media only screen and (min-width:37.5rem){.bar-header .logo a:after{content:'</> Anon Developer'}}
-```
-
-```
-.bar-header .logo a:after{transition:all .4s;content:'</> AD';}
-```
-
-and also in src/styl/_header.styl
-
-```
-content '</> AD'
-```
-
-```
-content '</> Anon Developer'
-```
-
 ## Header Name
 
-To use the power of CSS Content and media query, the header name is defined on [src/styl/_header.styl](). Change to your prefered name.
+To use the power of CSS Content and media query, the header name is defined on [src/styl/_header.styl](src/styl/_header.styl). Change to your prefered name.
 
 ## Color customization
 
