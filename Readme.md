@@ -25,7 +25,7 @@ If you want to see this template in real action, take a look at my [original sit
 
 ## Basic Setup
 
-1. [Install Jekyll](http://jekyllrb.com)
+1. [Install Jekyll](http://jekyllrb.com) (use the command ```sudo gem install jekyll```)
 2. Fork the [Cards Jekyll Template](https://github.com/willianjusten/cards-jekyll-template/fork)
 3. Clone the repo you just forked.
 4. Edit `_config.yml` to personalize your site.
@@ -60,11 +60,11 @@ To use the power of CSS Content and media query, the header name is defined on [
 
 ## Color customization
 
-All color variables are in `src/styl/variable`. To change the main color, just set the new value at `main` assignment. Another colors are for texts and the code background color.
+All color variables are in [src/styl/_variables.styl](src/styl/_variables.styl). To change the main color, just set the new value at `main` assignment. Another colors are for texts and the code background color.
 
 ## Theme Colors
 
-Every post has a main color that is defined on [src/styl/_theme-colors.styl](). Just create a new color with the prefix `post-` and define your main-class: 'css' and color: '#2DA0C3' on every post you create.
+Every post has a main color that is defined on [src/styl/_theme-colors.styl](src/styl/_theme-colors.styl). Just create a new color with the prefix `post-` and define your main-class: 'css' and color: '#2DA0C3' on every post you create.
 
 ## Creating posts
 
@@ -103,10 +103,10 @@ introduction: 'Escrevendo CSS sem perder a sanidade. Com essa introdução, Rico
 
 In order to compile the assets and run Jekyll on local you need to follow those steps:
 
-- Install [NodeJS](https://nodejs.org/)
-- Run `npm install`
-- Run `npm install -g gulp gulp-cli` (maybe you need to use `sudo` command)
-- Run `gulp`
+- Install [NodeJS](https://nodejs.org/) (remember to use the latest version)
+- Run `sudo npm install`
+- Run `sudo npm install -g gulp gulp-cli`
+- Run `sudo gulp`
 
 ## Questions
 
