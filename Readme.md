@@ -54,6 +54,26 @@ gplus_username:  lorem_ipsum
 disqus_username: lorem_ipsum
 ```
 
+You have to find and replace these following code in assets/css/main.css
+
+```
+@media only screen and (min-width:37.5rem){.bar-header .logo a:after{content:'</> Anon Developer'}}
+```
+
+```
+.bar-header .logo a:after{transition:all .4s;content:'</> AD';}
+```
+
+You also have to find and replace these following code in src/styl/_header.styl
+
+```
+content '</> AD'
+```
+
+```
+content '</> Anon Developer'
+```
+
 ## Header Name
 
 To use the power of CSS Content and media query, the header name is defined on [src/styl/_header.styl](). Change to your prefered name.
