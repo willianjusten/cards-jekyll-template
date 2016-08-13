@@ -8,6 +8,7 @@ url: "https://willianjusten.com.br" # the base hostname & protocol for your site
 username: Lorem Ipsum
 user_description: Anon Developer at Lorem Ipsum Dolor
 user_title: Anon Developer
+user_title_initials: AD
 email: anon@anon.com
 twitter_username: lorem_ipsum
 github_username:  lorem_ipsum
