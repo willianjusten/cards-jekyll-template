@@ -54,7 +54,7 @@ gplus_username:  lorem_ipsum
 disqus_username: lorem_ipsum
 ```
 
-You have to find and replace these following code in assets/css/main.css
+You have to find and replace '</> Anon Developer', '</> AD' in assets/css/main.css
 
 ```
 @media only screen and (min-width:37.5rem){.bar-header .logo a:after{content:'</> Anon Developer'}}
@@ -64,7 +64,7 @@ You have to find and replace these following code in assets/css/main.css
 .bar-header .logo a:after{transition:all .4s;content:'</> AD';}
 ```
 
-You also have to find and replace these following code in src/styl/_header.styl
+and also in src/styl/_header.styl
 
 ```
 content '</> AD'
