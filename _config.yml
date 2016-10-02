@@ -1,17 +1,11 @@
 # Site settings
-title: Willian Justen - Desenvolvedor Front End
-description: A blog about lorem ipsum dolor sit amet
+title: Open Data Training
+description:  A how-to guide on how to perform basic tasks using the portal
 baseurl: "/cards-jekyll-template" # the subpath of your site, e.g. /blog
 url: "https://willianjusten.com.br" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
 
 # User settings
-username: Lorem Ipsum
-user_description: Anon Developer at Lorem Ipsum Dolor
-email: anon@anon.com
-twitter_username: lorem_ipsum
-github_username:  lorem_ipsum
-gplus_username:  lorem_ipsum
-disqus_username: lorem_ipsum
+
 
 # Build settings
 markdown: kramdown
@@ -35,7 +29,7 @@ links:
     url: /series
   - title: Tags
     url: /tags
-  - title: About Me
+  - title: Open Data 
     url: /about
 
 # exclude my node related stuff
