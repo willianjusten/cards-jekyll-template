@@ -31,8 +31,8 @@
 # ----------------------------------------------------------------
 POST_TITLE="${@:2:$(($#-1))}"
 POST_NAME="$(echo ${@:2:$(($#-1))} | sed -e 's/ /-/g' | sed "y/ABCDEFGHIJKLMNOPQRSTUVWXYZ/abcdefghijklmnopqrstuvwxyz/")"
-CURRENT_DATE="$(date +'%Y-%m-%d')"
-TIME=$(date +"%T")
+CURRENT_DATE="$(date -u +'%Y-%m-%d')"
+TIME=$(date -u +"%T")
 FILE_NAME="${CURRENT_DATE}-${POST_NAME}.md"
 # ----------------------------------------------------------------
 
