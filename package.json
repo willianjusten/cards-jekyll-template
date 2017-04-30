@@ -14,7 +14,8 @@
     "gulp",
     "jekyll",
     "js",
-    "web"
+    "web",
+    "windows"
   ],
   "author": "Willian Justen de Vasconcellos",
   "license": "ISC",

@@ -1,5 +1,5 @@
 # Site settings
-title: David Hwang - Front-End Back-End Developer
+title: David Hwang - Front+Back-End Developer
 description: A blog about Web and Coding
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://hsmtree.github.io" # the base hostname & protocol for your site e.g. http://willianjusten.com.br
@@ -11,7 +11,8 @@ email: hsmtree@gmail.com
 twitter_username: hsmtree
 github_username:  hsmtree
 gplus_username:  hsmtree
-disqus_username: hsmtree
+disqus_username: hsmtree-github
+comments: true # from hsmtree-github.disqus.com
 
 # Build settings
 markdown: kramdown
