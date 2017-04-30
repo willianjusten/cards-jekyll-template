@@ -8,7 +8,7 @@
     function load_disqus()
     {
         disqus_loaded = true;
-        var disqus_shortname = '{{site.username}}';
+        var disqus_shortname = '{{site.disqus_username}}';
         var disqus_title = '{{page.title.replace("'", "\\'")}}';
         var disqus_url = '{{page.url}}';
         var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
