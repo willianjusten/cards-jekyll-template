@@ -1535,7 +1535,7 @@ footer p, footer a {
 	color: #b31917
 }
 .post-internet .post-content h1, .post-internet .post-content h2, .post-internet .post-content h3, .post-internet .post-content h4 {
-	color: #b31917
+	color: #b31917;
 }
 .post-internet .post-content a {
 	color: #b31917;
@@ -1552,22 +1552,22 @@ footer p, footer a {
 	color: #b31917
 }
 .post-internet .post-content blockquote {
-	border-left: .313rem solid #b31917
+	border-left: .313rem solid #b31917;
 }
 .post-internet .header-post, .post-internet .header-site {
 	background-color: #b31917;
 }
 .post-internet .header-post h1, .post-internet .header-site h1 {
-	text-shadow: 3px 3px #8f1412
+	text-shadow: 3px 3px #8f1412;
 }
 .post-internet .bar-header .logo a {
-	color: #b31917
+	color: #b31917;
 }
 .post-internet .author .email, .post-internet .author .github {
-	color: #b31917
+	color: #b31917;
 }
 .post-internet .share a:hover svg {
-	fill: #b31917
+	fill: #b31917;
 }
 
 @media only screen and (max-width:37.5rem) {
@@ -1578,8 +1578,8 @@ footer p, footer a {
 .post-internet .icon-menu {
 	fill: #b31917
 }
-.post-internet.box-body h2 {
-	color: #b31917
+.post-internet. box-body h2 {
+	color: #b31917;
 }
 .post-internet .box-body .tags a {
 	color: #b31917;
@@ -1985,3 +1985,5 @@ footer p, footer a {
 .post-web footer {
 	background-color: #FF4C84
 }
+
+
