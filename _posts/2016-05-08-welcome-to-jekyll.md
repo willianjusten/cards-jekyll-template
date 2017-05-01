@@ -7,7 +7,7 @@ description: 'Put your description here.'
 main-class: 'internet'
 color: '#B31917'
 tags:
-- jekyll
+- internet
 categories:
 twitter_text: 'Put your twitter description here.'
 introduction: 'Put your description here.'
