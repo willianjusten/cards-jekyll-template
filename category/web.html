@@ -1,13 +1,13 @@
 ---
 layout: default
-main-class: 'jekyll'
+main-class: 'web'
 ---
 
 <main class="home" id="scroll" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
-    <h1 class="title-category">jekyll</h1>
+    <h1 class="title-category">web</h1>
     <div id="grid" class="row flex-grid">
     {% for post in site.posts %}
-        {% if post.main-class == 'jekyll' %}
+        {% if post.main-class == 'web' %}
             <article class="box-item post-{{post.main-class}}" itemscope="itemscope" itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
                 <span class="ribbon"><span>{{post.main-class}}</span></span>
                     <div class="box-body">

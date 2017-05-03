@@ -1,3 +1,5 @@
+@charset "utf-8";
+/* CSS Document */
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 html {
 	font-family: 'Noto Sans KR', sans-serif;
@@ -546,7 +548,7 @@ html, body {
 }
 .bar-header .logo a:after {
 	transition: all .4s;
-	content: '</> DH';
+	content: '</> AD';
 }
 
 @media only screen and (min-width:37.5rem) {

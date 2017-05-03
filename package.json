@@ -13,7 +13,9 @@
     "stylus",
     "gulp",
     "jekyll",
-    "js"
+    "js",
+    "web",
+    "windows"
   ],
   "author": "Willian Justen de Vasconcellos",
   "license": "ISC",
