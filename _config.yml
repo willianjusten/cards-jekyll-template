@@ -30,16 +30,12 @@ compress_html:
 links:
   - title: Home
     url: /
-#  - title: Series
-#    url: /series
-#  - title: Tags
-#    url: /tags
-#  - title: About Me
-#    url: /about
-  - title: Java
-    url: /java
-  - title: Jekyll
-    url: /jekyll
+  - title: Series
+    url: /series
+  - title: Tags
+    url: /tags
+  - title: About Me
+    url: /about
 
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']
