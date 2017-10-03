@@ -104,9 +104,9 @@ introduction: 'Escrevendo CSS sem perder a sanidade. Com essa introdução, Rico
 In order to compile the assets and run Jekyll on local you need to follow those steps:
 
 - Install [NodeJS](https://nodejs.org/) (remember to use the latest version)
-- Run `sudo npm install`
-- Run `sudo npm install -g gulp gulp-cli`
-- Run `sudo gulp`
+- Run `npm install`
+- Run `npm install -g gulp gulp-cli`
+- Run `gulp`
 
 ## Questions
 
