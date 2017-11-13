@@ -21,11 +21,11 @@
                 type: "GET",
                 url: settings.jsonFile,
                 dataType: 'json',
-                success(data, textStatus, jqXHR) {
+                success: function(data, textStatus, jqXHR) {
                     jsonData = data;
                     registerEvent();
                 },
-                error(x, y, z) {
+                error: function(x,y,z) {
                     console.log("***ERROR in simpleJekyllSearch.js***");
                     console.log(x);
                     console.log(y);
