@@ -12,7 +12,9 @@
 
             {% include share.html %}
             {% include author.html %}
-            {% include comments.html %}
+            {% if page.comments != false %} 
+                {% include comments.html %}
+            {% endif %}
             {% include footer.html %}
         </section>
     </body>
