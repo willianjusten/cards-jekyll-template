@@ -1,4 +1,4 @@
-## Cards Jekyll Template - [Demo](https://willianjusten.com.br/cards-jekyll-template)
+## Cards Jekyll Template - [Demo](https://willianjusten.github.io/cards-jekyll-template)
 
 ![Screenshot](screenshot.png)
 
