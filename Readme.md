@@ -108,6 +108,14 @@ In order to compile the assets and run Jekyll on local you need to follow those 
 - Run `npm install -g gulp gulp-cli`
 - Run `gulp`
 
+If the builded site isn't correctly styled:
+
+- Try temporarily comment out the following line in `_config.yml`.
+   ```
+   # baseurl: "/cards-jekyll-template" # the subpath of your site, e.g. /blog
+   ```
+- Run `gulp` again.
+
 ## Questions
 
 Having a problem getting something to work or want to know why I setup something in a certain way? Ping me on Twitter [@willian_justen](https://twitter.com/willian_justen) or file a [GitHub Issue](https://github.com/willianjusten/will-jekyll-template/issues/new).
