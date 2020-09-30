@@ -19,15 +19,16 @@
       - {label: "Tags", name: "tags", widget: "select", multiple: true, options: ["html", "css", "js", "svg", "react", "git", "bash", "dev", "tools", "resources"]}
       - {label: "Main class", name: "main-class", widget: "select", options: ["html", "css", "js", "react", "svg", "git", "bash", "dev", "tools", "resources"]}
       - {label: "Color", name: "color", widget: "select", options:
-        - { label: "html", value: "#EB7728" }
-        - { label: "css", value: "#2DA0C3" }
-        - { label: "js", value: "#D6BA32" }
-        - { label: "svg", value: "#7D669E" }
-        - { label: "react", value: "#61DAFB" }
-        - { label: "git", value: "#7AAB13" }
-        - { label: "bash", value: "#282C34" }
-        - { label: "dev", value: "#637A91" }
-        - { label: "tools", value: "#B31917" }
-        - { label: "resources", value: "#FF4C89" }
+        [ { label: "html", value: "#EB7728" },
+          { label: "css", value: "#2DA0C3" },
+          { label: "js", value: "#D6BA32" },
+          { label: "svg", value: "#7D669E" },
+          { label: "react", value: "#61DAFB" },
+          { label: "git", value: "#7AAB13" },
+          { label: "bash", value: "#282C34" },
+          { label: "dev", value: "#637A91" },
+          { label: "tools", value: "#B31917" },
+          { label: "resources", value: "#FF4C89" }
+        ]
       }
       #- {label: "Category", name: "categories", widget: "list"}
