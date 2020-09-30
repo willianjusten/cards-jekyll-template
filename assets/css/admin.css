@@ -5,3 +5,20 @@ body {
   padding: 20px;
   line-height: 1.7;
 }
+
+blockquote {
+  padding-left: 16px;
+  border-left: 3px solid rgb(239, 240, 244);
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: 16px;
+}
+
+pre {
+  background: #222;
+  width: 100%;
+  padding: 1.25rem 0;
+  color: #fff;
+  margin: 1.875rem 0;
+  font-size: .875rem;
+}
