@@ -1,3 +1,5 @@
+⚠️⚠️ This project is not maintained anymore ⚠️⚠️
+
 ## Cards Jekyll Template - [Demo](https://willianjusten.github.io/cards-jekyll-template)
 
 ![Screenshot](screenshot.png)
