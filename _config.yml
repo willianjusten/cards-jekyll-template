@@ -31,12 +31,15 @@ compress_html:
 links:
   - title: Home
     url: /
-  - title: Series
-    url: /series
   - title: Tags
     url: /tags
-  - title: About Me
+  - title: About
     url: /about
+
+# Sass config
+sass:
+  sass_dir: src/sass
+  style: :compressed # You might prefer to minify using :compressed, default :expanded
 
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']

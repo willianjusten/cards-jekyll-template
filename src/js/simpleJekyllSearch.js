@@ -1,4 +1,4 @@
-(function($) {
+function simpleJekyllSearch($) {
     $.fn.simpleJekyllSearch = function(options) {
         var settings = $.extend({
             jsonFile        : location+'/search.json',
@@ -86,4 +86,6 @@
             searchResults.children().remove();
         }
     }
-}(Zepto));
+};
+
+module.exports = simpleJekyllSearch;

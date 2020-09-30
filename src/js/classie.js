@@ -11,7 +11,7 @@
 /*jshint browser: true, strict: true, undef: true */
 /*global define: false */
 
-( function( window ) {
+function classie( window ) {
 
 'use strict';
 
@@ -77,4 +77,6 @@ if ( typeof define === 'function' && define.amd ) {
   window.classie = classie;
 }
 
-})( window );
+};
+
+module.exports = classie;

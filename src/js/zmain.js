@@ -1,7 +1,9 @@
-(function( $, window, undefined ) {
+// function zmain
+function zmain($, window, undefined) {
   // Menu
   $("a#slide").click(function(){
     $("#sidebar,a#slide,#fade").addClass("slide");
+    $("#sidebar").attr("aria-hidden", false)
     $("#open").hide();
     $("#search").hide();
     $("#close").show();
@@ -9,6 +11,7 @@
 
   $("#fade").click(function(){
     $("#sidebar,a#slide,#fade").removeClass("slide");
+    $("#sidebar").attr("aria-hidden", true)
     $("#open").show();
     $("#search").show();
     $("#close").hide();
@@ -24,6 +27,7 @@
 
   bs.dothis.on('click', function() {
     $('.search-wrapper').toggleClass('active');
+    $('.search-wrapper').attr("aria-hidden", false);
     bs.searchform.toggleClass('active');
     bs.searchform.find('input').focus();
     bs.canvas.toggleClass('search-overlay');
@@ -32,6 +36,7 @@
 
   function close_search() {
     $('.search-wrapper').toggleClass('active');
+    $('.search-wrapper').attr("aria-hidden", true);
     bs.searchform.toggleClass('active');
     bs.canvas.removeClass('search-overlay');
   }
@@ -44,33 +49,35 @@
           close_search();
       }
   });
-  if (document.getElementsByClassName('home').length >=1 ) {
-      new AnimOnScroll( document.getElementById( 'grid' ), {
-        minDuration : 0.4,
-        maxDuration : 0.7,
-        viewportFactor : 0.2
-      } );
+  // if (document.getElementsByClassName('home').length >=1 ) {
+  //     new AnimOnScroll( document.getElementById( 'grid' ), {
+  //       minDuration : 0.4,
+  //       maxDuration : 0.7,
+  //       viewportFactor : 0.2
+  //     } );
+  // }
+
+  // smoothScroll.init({
+  //     selectorHeader: '.bar-header', // Selector for fixed headers (must be a valid CSS selector)
+  //     speed: 500, // Integer. How fast to complete the scroll in milliseconds
+  //     updateURL: false, // Boolean. Whether or not to update the URL with the anchor hash on scroll
+  // });
+
+  function scrollBanner() {
+    var scrollPos;
+    var headerText = document.querySelector('.header-post .content')
+    scrollPos = window.scrollY;
+
+    if (scrollPos <= 500 && headerText != null) {
+        headerText.style.transform =  "translateY(" + (-scrollPos/3) +"px" + ")";
+        headerText.style.opacity = 1-(scrollPos/500);
+    }
   }
 
-  smoothScroll.init({
-      selectorHeader: '.bar-header', // Selector for fixed headers (must be a valid CSS selector)
-      speed: 500, // Integer. How fast to complete the scroll in milliseconds
-      updateURL: false, // Boolean. Whether or not to update the URL with the anchor hash on scroll
-  });
-
-function scrollBanner() {
-  var scrollPos;
-  var headerText = document.querySelector('.header-post .content')
-  scrollPos = window.scrollY;
-
-  if (scrollPos <= 500 && headerText != null) {
-      headerText.style.transform =  "translateY(" + (-scrollPos/3) +"px" + ")";
-      headerText.style.opacity = 1-(scrollPos/500);
+  if (screen.width > 1024) {
+    window.addEventListener('scroll', scrollBanner);
   }
+
 }
 
-if (screen.width > 1024) {
-  window.addEventListener('scroll', scrollBanner);
-}
-
-})( Zepto, window );
+module.exports = zmain;

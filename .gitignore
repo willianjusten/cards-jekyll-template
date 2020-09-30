@@ -4,3 +4,4 @@ node_modules
 _drafts
 .jekyll-cache
 .vscode
+.sass-cache
