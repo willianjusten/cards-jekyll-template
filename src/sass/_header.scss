@@ -1,0 +1,127 @@
+html,
+body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.bar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+	background: $sec;
+	padding: 10px 20px;
+	box-shadow: 0 -3px 9px #000;
+	position: fixed;
+	width: 100%;
+  z-index: 10;
+  
+	.logo {
+		margin: 0;
+		line-height: 35px;
+	  a {
+      color: $main;
+      text-decoration: none;
+      font-size: 24px;
+      &:after {
+        transition: all .4s;
+        content: '</> AD';
+      }
+    } 
+  }
+}
+
+.header-controls {
+  display: flex;
+  align-items: center;
+}
+
+.main-nav {
+  display: none;
+  margin: 0 15px 0 0;
+  a {
+    color: $main;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color .3s;
+    margin: 0 0 0 12px;
+  
+    &:hover {
+      color: darken($main, 10%);
+    }
+  }
+}
+
+// Header Post
+
+.header-post {
+  background-color: $main;
+
+  min-height: 500px;
+  position: fixed;
+  width: 100%;
+  .content {
+		margin: auto;
+    max-width: 800px;
+    width: 95%;
+    text-align: center;
+    padding: 140px 0 66px;
+  }
+
+	.subheader {
+    display: table;
+		padding: 20px;
+		a {
+			border: 2px solid $sec;
+			border-radius: 20px;
+			padding: 0 10px;
+    }
+  }
+
+	.date {
+    @include main-font(300);
+		font-size: 16px;
+  }
+
+  h1 {
+		font-size: 30px;
+		margin: 0 0 30px;
+		text-shadow: 3px 3px darken($main, 10%);
+  }
+
+	.subtitle {
+    @include main-font(300);
+		font-size: 20px;
+  }
+
+	h1,.subtitle, .date {
+		color: $sec;
+		text-align: center;
+  }
+
+  a,p {
+		color: $sec;
+		text-decoration: none;
+		@include main-font(300);
+    font-size: 18px;
+  }
+}
+    
+@media only screen and (min-width: $cut) {
+  
+  .bar-header .logo a:after {
+    content: '</> Anon Developer';
+  }
+
+  .header-post .subheader a {
+    padding: 0 10px;
+  }
+
+  .header-post h1 {
+    font-size: 60px;
+  }
+
+  .main-nav {
+    display: block;
+  }
+
+}

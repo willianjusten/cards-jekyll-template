@@ -1,0 +1,17 @@
+@mixin main-font($weight: 800) {
+  font-weight: $weight;
+  font-style: normal;
+}
+
+@mixin center($width) {
+  width: auto;
+  max-width: $width;
+  float: none;
+  display: block;
+  margin: 0 auto;
+}
+
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}

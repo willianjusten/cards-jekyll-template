@@ -1,23 +1,19 @@
 <div class="search-wrapper" aria-hidden="true">
     <div class="search-form">
         <input type="text" class="search-field" placeholder="Search...">
-        <svg class="icon-remove-sign" aria-label="Close search input" role="button"><use xlink:href="#icon-close"></use></svg>
+        <button class="header-control close-search" aria-label="Close search input">
+          <svg class="icon-remove-sign"><use xlink:href="#icon-close"></use></svg>
+        </button>
         <ul class="search-results search-list"></ul>
     </div>
 </div>
 
 <div id="fade" class="overlay"></div>
-<!-- <button id="slide" class="slideButton fade" aria-label="Open main menu">
-  <svg id="open" class="icon-menu"><use xlink:href="#icon-menu"></use></svg>
-</button>
-<button class="slideButton fade" aria-label="Close main menu">
-  <svg id="close" class="icon-menu"><use xlink:href="#icon-close"></use></svg>
-</button> -->
-<a id="slide" class="slideButton fade">
-  <svg id="open" class="icon-menu" aria-label="Open main menu" role="button"><use xlink:href="#icon-menu"></use></svg>
-  <svg id="close" class="icon-menu" aria-label="Close main menu" role="button"><use xlink:href="#icon-close"></use></svg>
-</a>
+
 <aside id="sidebar" aria-label="Main menu" aria-hidden="true">
+  <button class="slideButton fade close header-control" aria-label="Close main menu">
+    <svg id="close" class="icon-menu"><use xlink:href="#icon-close"></use></svg>
+  </button>
   <nav id="navigation">
     <h2>MENU</h2>
     <ul>
@@ -28,6 +24,3 @@
     </ul>
   </nav>
 </aside>
-<a id="search" class="dosearch">
-    <svg class="icon-menu icon-search" aria-label="Open search input" role="button"><use xlink:href="#icon-search"></use></svg>
-</a>

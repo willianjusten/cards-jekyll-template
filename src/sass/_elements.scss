@@ -1,0 +1,29 @@
+.post-content {
+  
+  .tags{
+    margin-top: 30px;
+    
+    a {
+      font-size: 14px;
+      color: $main;
+      display: inline-block;
+      border: 1px solid $main;
+      border-radius: 5px;
+      padding: 4px 10px;
+      margin-right: 2px;
+      margin-bottom: 8px;
+      text-decoration: none;
+      
+      &:hover {
+        color: darken($main, 15%);
+        border: 1px solid darken($main, 15%);
+        background: #fff;
+      }
+    }
+  }
+}
+    
+
+.img-rounded {
+  border-radius: 50%;
+}

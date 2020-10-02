@@ -1,16 +1,15 @@
 ---
 layout: post
-title: "Social Meta Tags"
+title: "HTML Meta Tags and more..."
 date: 2015-02-09 19:33:48
 image: '/assets/img/dica-rapida-2/main.png'
 description: 'Aprenda como ser mais social, ter maior relevância nas redes sociais e atrair mais usuários.'
 main-class: 'html'
-color: '#EB7728'
+color: '#E54C20'
 tags:
-- social
-- seo
-- tutorial
+- html
 categories:
+- "Guides"
 twitter_text: 'Aprenda a usar as meta tags sociais.'
 introduction: "Aprenda como ser mais social, ter maior relevância nas redes sociais e atrair mais usuários. Para isso, basta criar as meta tags corretas."
 ---
@@ -57,8 +56,6 @@ Abaixo seguem algumas das tags principais, das quais inclusive utilizo no meu bl
 
 Tendo esse conjunto de informações, quando você for colocar seu link em algum lugar do facebook, ele vai ler as informações e colocar semelhante a imagem abaixo:
 
-![Imagem de um post no Facebook](/assets/img/dica-rapida-2/face-post.png)
-
 **AVISO:** o facebook é uma bosta para ler seus links corretamente, portanto, utilize a ferramenta de [debug](https://developers.facebook.com/tools/debug/og/object/), para que ele possa ler os dados e identificar se está tudo certinho. Lembre-se também de seguir as regras do facebook, como, por exemplo, tamanhos de imagem e dados passados.
 
 ## Twitter
@@ -77,8 +74,6 @@ Seguem as tags básicas:
 {% endhighlight %}
 
 Para que o twitter passe a aceitar seus cards, você precisa validar [neste link aqui](https://cards-dev.twitter.com/validator). Após validado, quando você postar algum link do seu site, ele será visualizado conforme a imagem abaixo:
-
-![Imagem de um post no twitter](/assets/img/dica-rapida-2/twitter-post.png)
 
 ## Google Plus
 

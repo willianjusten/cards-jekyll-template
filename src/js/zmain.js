@@ -1,16 +1,16 @@
 // function zmain
 function zmain($, window, undefined) {
   // Menu
-  $("a#slide").click(function(){
-    $("#sidebar,a#slide,#fade").addClass("slide");
+  $("#slide").click(function(){
+    $("#sidebar,#slide,#fade").addClass("slide");
     $("#sidebar").attr("aria-hidden", false)
     $("#open").hide();
     $("#search").hide();
     $("#close").show();
   });
 
-  $("#fade").click(function(){
-    $("#sidebar,a#slide,#fade").removeClass("slide");
+  $("#fade,.slideButton.close").click(function(){
+    $("#sidebar,#slide,#fade").removeClass("slide");
     $("#sidebar").attr("aria-hidden", true)
     $("#open").show();
     $("#search").show();

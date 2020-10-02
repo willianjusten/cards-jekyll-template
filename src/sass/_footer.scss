@@ -1,0 +1,27 @@
+.comments {
+  width: auto;
+  max-width: 800px;
+  float: none;
+  display: block;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  h3 {
+    margin: 0 0 30px;
+    font-size: 30px;
+  }
+}
+
+footer {
+  background: $main;
+  padding: 25px 0;
+  margin-top: 100px;
+
+  p, a {
+    text-decoration: none;
+    @include main-font(300);
+    color: $sec;
+    text-align: center;
+    margin: 0;
+  }
+}

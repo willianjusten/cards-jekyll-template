@@ -1,0 +1,241 @@
+.post-content h1:before,
+.post-content h2:before,
+.post-content h3:before,
+.post-content h4:before,
+.post-content h5:before,
+.tag-title:before {
+  display: block;
+  content: " ";
+  margin-top: -60px;
+  height: 75px;
+  visibility: hidden
+}
+
+.post {
+  position: relative;
+  top: 500px;
+  background: #fff
+}
+
+.post-content {
+  padding: 40px 0;
+
+  img {
+    max-width: 100%;
+    margin: 30px auto;
+    display: block;
+  }
+
+  p, h1, h2, h3, h4,ul,ol, .tags, iframe, .button-post {
+    @include center(800px);
+    padding: 0 20px;
+    margin: 0 auto 30px;
+    @include main-font(300);
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: .01rem;
+  }
+
+  li {
+    padding: 10px 0;
+  }
+
+  ul {
+    margin-bottom: 0
+  }
+
+  p, li {
+    color: $texts;
+
+    code {
+      color: $main;
+      word-wrap: break-word;
+    }
+  }
+
+  a {
+    color: $main;
+    border-bottom: 2px dashed $main;
+    @include main-font(300);
+    text-decoration: none;
+    transition: background .3s, color .3s;
+
+    &:hover {
+      color: #fff;
+      background: $main;
+    }
+  }
+
+  .externalLink:after {
+    display: inline-block;
+    content: '';
+    color: $main;
+    background-image: url("../img/external.svg");
+    background-size: 100%;
+    margin-left: 5px;
+    @include size(18px, 18px);
+  }
+
+  iframe {
+    margin-top: 30px;
+    width: 100%
+  }
+
+  #twitter-widget-0, 
+  .instagram-media {
+    margin: auto !important;
+  }
+
+  h1,h2,h3,h4,h5 {
+    @include main-font(800);
+    line-height: 1.4;
+  }
+
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 22px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+
+  ul, ol {
+    padding-left: 40px;
+  }
+
+  ul {
+    &.svg-serie p {
+      padding: 20px;
+    }
+  }
+
+  blockquote {
+    @include center(730px);
+    border-left: 5px solid #005f97;
+    padding: 0 30px;
+    margin: 50px auto;
+    width: 90%;
+
+    p {
+      color: rgba(0,0,0,0.6);
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.5;
+      padding: 0;
+    }
+  }
+
+  hr {
+    @include center(760px);
+    border: 1px solid #f2f2f2;
+    margin: 50px auto;
+  }
+
+  > table {
+    margin: 50px auto;
+    display: none;
+
+    tr, td {
+      border: 2px solid #ccc;
+      padding: 5px;
+    }
+  }
+
+  td > pre {
+    padding: 0;
+    margin: 0
+  }
+
+  td.gutter.gl {
+    padding-right: 25px;
+    line-height: 24px;
+  }
+
+  .post-list {
+    list-style: none;
+    margin: 25px auto;
+    padding: 0 20px;
+    
+    a {
+      display: block;
+      border-bottom: 1px solid darken(lightGray, 5%);
+      padding: 10px 0;
+      text-decoration: none;
+      transition: all .5s;
+      &:hover {
+        color: darken($main, 20%);
+        border-bottom: 1px solid darken($main, 2%);
+        background: #fff;
+      }
+    }
+  
+    .entry-date {
+      float: right;
+      display: none;
+    } 
+  }       
+
+}
+
+.tag-title {
+  @include main-font(300);
+  font-size: 36px;
+  margin-top: 60px;
+  @include center(800px);
+  font-size: 28px;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+
+@media only screen and (min-width: $cut) {
+
+  .post-content {
+    // p, h1, h2, h3, h4,ul,ol, .tags, iframe, .button-post {
+    //   font-size: 20px
+    // }
+
+    ul.post-list.svg-serie p {
+      padding: 0;
+    }
+
+    h1 {
+      font-size: 45px;
+    }
+    h2 {
+      font-size: 35px;
+    }
+    h3 {
+      font-size: 25px;
+    }
+
+    blockquote {
+      width: auto;
+
+      p {
+        font-size: 20px;
+        line-height: 2;
+      }
+    }
+
+    > table {
+      display: initial;
+    }
+
+  }
+
+  .tag-title {
+    font-size: 36px;
+    margin-top: 60px;
+  }
+
+  .post-list {
+    padding: 0;
+
+    .entry-date {
+      display: initial;
+    }
+  }
+
+}

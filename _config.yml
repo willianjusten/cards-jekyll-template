@@ -16,8 +16,7 @@ disqus_username: lorem_ipsum
 # Build settings
 markdown: kramdown
 highlighter: rouge
-permalink: /:title/
-
+permalink: /:title/ 
 
 # html minify
 compress_html:

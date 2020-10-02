@@ -1,0 +1,82 @@
+.author {
+  background: $lightGray;
+  display: table;
+  width: 100%;
+  padding: 40px 0;
+  margin: 40px 0;
+      
+  .details {
+    margin: auto;
+    max-width: 800px;
+    padding: 0 20px;
+    text-align: center;
+  }
+
+  img {
+    border-radius: 50%;
+    display: block;
+    margin: auto;         
+  }
+
+  .def {
+    color: gray;
+    font-size: 18px;
+    @include main-font(300);
+    margin: 10px;
+  }
+          
+  .name {
+    margin: 0;
+
+    a {
+      @include main-font();
+      text-decoration: none;
+      color: black;
+      font-size: 30px;
+      &:hover {
+        color: $main;
+      }
+    }  
+  } 
+
+  .desc {
+    @include main-font(300);
+    margin: 10px;
+    font-size: 16px;
+  }
+          
+  .email,
+  .github {
+    text-decoration: none;
+    color: $main;
+  }
+}
+
+@media only screen and (min-width: $cut) {
+
+  .author {
+    padding: 50px 0;
+    
+    .details{
+      text-align: left;
+    }
+    
+    img {
+      float: left;
+      margin-right: 50px;
+    }
+
+    .def {
+      margin: 0;
+      padding-top: 25px;
+    }
+
+    .name a {
+      font-size: 45px;
+    }
+
+    .desc {
+      font-size: 20px;
+    }
+  }
+}

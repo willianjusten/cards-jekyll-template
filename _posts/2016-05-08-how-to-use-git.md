@@ -1,15 +1,16 @@
 ---
 layout: post
-title: "How to Use"
+title: "How to Use this Template (Git)"
 date: 2016-05-08 20:35:48
 image: '/assets/img/'
 description: 'How to use this template'
-main-class: 'misc'
-color: '#7AAB13'
+main-class: 'git'
+color: '#F64D27'
 tags:
-- misc
+- git
 - jekyll
 categories:
+- "How-tos"
 twitter_text: 'How to use this template'
 introduction: 'How to use this template'
 ---

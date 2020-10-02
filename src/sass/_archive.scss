@@ -1,0 +1,19 @@
+.archive {
+  display: flex;
+  flex-direction: column;
+
+  .box-item {
+    flex: 1 0 auto;
+    min-height: auto;
+
+    .box-body {
+      h2, p, .tags {
+        padding: 0; 
+      }
+    }
+
+    .tags {
+      margin: 0;
+    }
+  }
+}

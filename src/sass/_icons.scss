@@ -1,0 +1,51 @@
+.icons-home {
+  text-align: center;
+  a {
+    display: inline-block;
+    padding: 15px;
+    margin: 2px;
+    border-radius: 50%;
+    border: 2px solid $sec;
+    line-height: 0;
+    transition: background .7s;
+    
+    .icon {
+      fill: $sec;
+      @include size(18px, 18px);
+    }
+
+    &:hover {
+      background: $sec;
+      .icon {
+        fill: $main;
+      }
+    }
+  }
+}
+
+.down {
+  position: absolute;
+  bottom: 50px;
+  width: 100%;
+  display: block;
+  text-align: center;
+
+  .icon {
+    position: absolute;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    @include size(100px, 100px);
+    fill: $sec;
+    animation: pulse 1.3s infinite;
+  }
+}
+
+@media only screen and (max-width: $cut) {
+  .icons-home a .icon {
+    @include size(30px, 30px);
+  }
+}

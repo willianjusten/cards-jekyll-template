@@ -1,0 +1,111 @@
+$themes: (
+  "post-css": #2DA0C3,
+  "post-js": #F7DF1C,
+  "post-html": #E54C20,
+  "post-svg": #EFAA1C,
+  "post-react": #61DAFB,
+  "post-git": #F64D27,
+  "post-dev": #637a91,
+  "post-tools": #B31917,
+  "post-resources": #FF4C89,
+  "post-misc": #7AAB13,
+);
+
+@each $theme, $color in $themes {
+  .#{$theme} {
+    --theme-color: #{$color};
+    
+    .title-category,
+    .main-nav a {
+      color: $color;
+    }
+
+    .post-content {
+      h1,h2,h3,h4, strong,
+      p code, li code {
+        color: $color;
+      }
+      a {
+        color: $color;
+        border-bottom: 2px dashed $color;
+        &:hover {
+          background-color: $color;
+          color: #fff;
+        }
+      }
+      blockquote {
+        border-left: 5px solid $color;
+      }
+    }
+
+    .header-post,
+    .header-site {
+      background-color: $color;
+
+      h1 {
+        text-shadow: 3px 3px darken($color, 10%)
+      }
+    }
+
+    .bar-header .logo a,
+    .author .email,
+    .author .github,
+    .author .name a:hover {
+      color: $color;
+    }
+
+    .share a {
+      &:hover svg {
+        fill: $color;
+      } 
+    }
+    
+    .icon-menu {
+      fill: $color;
+    }
+          
+    .box-body {
+      h2 {
+        color: $color;
+      }
+      
+      .tags a {
+        color: $color;
+        border: 1px solid $color;
+        &:hover {
+          color: #fff;
+          background: $color;
+        }
+      }
+    }
+
+    aside {
+      background-color: $color;
+      nav li a:hover {
+        color: $color;
+      }
+    }
+
+    .ribbon span {
+      background-color: $color;
+      &:before {
+        border-left: 3px solid darken($color, 15%);
+        border-top: 3px solid darken($color, 15%);
+      }
+      &:after {
+        border-right: 3px solid darken($color, 15%);
+        border-top: 3px solid darken($color, 15%);
+      }
+    }
+
+    footer {
+      background-color: $color;
+    }
+  }
+
+  @media only screen and (max-width: 37.5rem) {
+    .#{$theme} body.search-overlay:after {
+        background-color: $color;
+    }
+  }
+}

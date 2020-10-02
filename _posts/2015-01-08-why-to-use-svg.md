@@ -1,20 +1,18 @@
 ---
 layout: post
-title: "#1 - Por que usar SVG?"
+title: "#1 - How to use SVG?"
 date: 2015-01-08 08:39:47
-description: "O SVG finalmente começa dar o ar das graças e você vai saber aqui o porquê disso."
+description: "Scalable Vector Graphics is an Extensible Markup Language-based vector image forma"
 main-class: 'svg'
-color: '#7D669E'
+color: '#EFAA1C'
 tags:
 - svg
-- frontend
-- trend
-- "dicarapida"
-image: "/assets/img/por-que-usar-svg/coloridos.jpg"
+- dev
+image:
 categories:
-- "O mundo mágico do SVG"
+- "How-tos"
 twitter_text: "Por que você deveria estar usando SVG?"
-introduction: "Alguns motivos para se usar SVG no seu workflow e alguns exemplos bem bacanas de como outros já utilizam."
+introduction: "The SVG specification is an open standard developed by the World Wide Web Consortium since 1999."
 ---
 
 ## Meu histórico
@@ -33,11 +31,11 @@ Bom, pretendo fazer desse post, uma série sobre SVG, então serei bastante brev
 
 ### Rico em Detalhes e Cores
 
-![Coração feito de ícones coloridos](/assets/img/por-que-usar-svg/coloridos.jpg)
-
 Fonte: [Designmodo](http://designmodo.com/flat/)
 
 ### Interativo e Estilizável via CSS
+
+Scalable Vector Graphics is an Extensible Markup Language-based vector image format for two-dimensional graphics with support for interactivity and animation. The SVG specification is an open standard developed by the World Wide Web Consortium since 1999. SVG images and their behaviors are defined in XML text files.
 
 ![Ícone de uma lâmpada](/assets/img/por-que-usar-svg/animacao.gif)
 
@@ -45,25 +43,23 @@ Fonte: [tutsplus](http://tutsplus.github.io/Styling-Iconic/styling/index.html)
 
 ### Responsivo
 
-![Imagem de uma logo em vários tamanhos](/assets/img/por-que-usar-svg/responsivo.png)
+Scalable Vector Graphics is an Extensible Markup Language-based vector image format for two-dimensional graphics with support for interactivity and animation. The SVG specification is an open standard developed by the World Wide Web Consortium since 1999. SVG images and their behaviors are defined in XML text files.
 
 Fonte: [Codrops](http://tympanus.net/codrops/2014/08/19/making-svgs-responsive-with-css/)
 
 ### Animações de alto nível
 
-![Animação desenhando uns frascos](/assets/img/por-que-usar-svg/animacao-2.gif)
+The SVG specification is an open standard developed by the World Wide Web Consortium since 1999. SVG images and their behaviors are defined in XML text files.
 
 Fonte: [Panizzon](http://panizzon.ind.br/)
 
 ### Perfeito para representação Gráfica
 
-![Gráfico](/assets/img/por-que-usar-svg/grafico.png)
+Scalable Vector Graphics is an Extensible Markup Language-based vector image format for two-dimensional graphics with support for interactivity and animation.
 
 Fonte: [D3 example](http://bl.ocks.org/Caged/6476579)
 
 ### Efeitos e Filtros
-
-![Uma imagem com diferentes efeitos](/assets/img/por-que-usar-svg/filtros.png)
 
 Fonte: [Web Platform](http://docs.webplatform.org/wiki/svg/tutorials/smarter_svg_filters)
 

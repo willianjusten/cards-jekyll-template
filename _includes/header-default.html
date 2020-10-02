@@ -2,10 +2,18 @@
     <span class="logo">
         <a href="{{site.baseurl}}/"></a>
     </span>
-    <nav>
-        {% for link in site.links %}
-            <a href="{{ site.url }}{{site.baseurl}}{{ link.url }}">{{ link.title }}</a>
-        {% endfor %}
-    </nav>
+    <div class="header-controls">
+        <nav class="main-nav">
+            {% for link in site.links %}
+                <a href="{{ site.url }}{{site.baseurl}}{{ link.url }}">{{ link.title }}</a>
+            {% endfor %}
+        </nav>
+        <button id="slide" class="slideButton fade header-control" aria-label="Open main menu">
+            <svg id="open" class="icon-menu"><use xlink:href="#icon-menu"></use></svg>
+        </button>
+        <button id="search" class="dosearch header-control" aria-label="Open search input">
+            <svg class="icon-menu icon-search"><use xlink:href="#icon-search"></use></svg>
+        </button>
+    </div>
 </header>
 {% include menu-search.html %}

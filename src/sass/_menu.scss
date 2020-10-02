@@ -1,0 +1,131 @@
+*,*:before,*:after {
+  box-sizing: border-box;
+}
+
+a,aside,.overlay,body {
+  transition: all .25s ease;
+}
+
+.header-control {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.slideButton,
+.dosearch {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  @include size(40px, 40px);
+}
+
+.slideButton.close {
+  position: absolute;
+  top: 10px;
+  right: 260px;
+}
+
+.dosearch {
+  padding: 2px 3px;
+}
+
+.icon-menu {
+  @include size(40px, 40px);
+  fill: $main;
+}
+
+.icon-search {
+  @include size(25px, 25px)
+}
+
+.overlay {
+  cursor: pointer;
+}
+
+#close {
+  display: none;
+  fill: #fff;
+}
+
+aside {
+  position: fixed;
+  height: 100%;
+  width: 240px;
+  padding: 40px 0 0;
+  top: 0;
+  right: -240px;
+  background-color: $main;
+  z-index: 0;
+  box-shadow: inset -10px -1px 15px -9px rgba(0,0,0,0.5);
+
+  h2 {
+    text-align: center;
+    margin: 0 0 10px;
+    @include main-font(800);
+    font-size: 20px;
+    color: #fff;
+  }
+
+  nav ul {
+    padding: 0;
+  }
+
+  nav li {
+    margin: 0;
+    list-style-type: none;
+  }
+
+  nav li a {
+    width: 100%;
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    @include main-font(300);
+    color: $sec;
+    border-top: 1px solid $sec;
+
+    &:hover {
+      color: $main;
+      background: $sec;
+    }
+  }
+
+  nav .feed {
+    border-bottom: 1px solid $sec;
+  }
+
+  &.slide {
+    right: 0;
+    z-index: 20;
+  }
+}
+
+.slide #close {
+  right: 250px;
+  position: fixed;
+  pointer-events: none;
+}
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  pointer-events: none;
+  background: transparent;
+  z-index: 17;
+
+  &.slide {
+    pointer-events: auto;
+    right: 240px;
+    background: rgba(0,0,0,0.6)
+  }
+}
+
+@media only screen and (min-width: $cut) {
+  .slideButton {
+    display: none;
+  }
+}

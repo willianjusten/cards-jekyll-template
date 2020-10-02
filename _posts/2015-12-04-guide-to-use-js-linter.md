@@ -1,16 +1,16 @@
 ---
 layout: post
-title: "Analisando seu código JS com um linter"
+title: "Guide to use JavaScript linter"
 date: 2015-12-04 22:43:23
 image: '/assets/img/linter/errors-list.png'
 description: 'Valide seu código em JS/ES6 em busca de erros, warnings, códigos esquecidos e melhore a sua qualidade. Seu amiguinho agradece um código mais limpo.'
 main-class: 'js'
-color: '#D6BA32'
+color: '#F7DF1C'
 tags:
 - js
-- linter
-- tutorial
-categories:
+- dev
+categories: 
+- Guides
 twitter_text: 'Valide seu código em JS/ES6 em busca de erros e melhore a sua qualidade.'
 introduction: 'Valide seu código em JS/ES6 em busca de erros, warnings, códigos esquecidos e melhore a sua qualidade. Seu amiguinho agradece um código mais limpo.'
 ---
@@ -71,8 +71,6 @@ Para os próximos passos, vou ensinar utilizando o `eslint`, que julgo o melhor 
 
 Após instalado o `eslint`, vá até o diretório do seu projeto, digite `eslint --init` e responda as perguntas de acordo com sua necessidade, segue abaixo o print de um uso meu.
 
-![Print do eslint sendo usado](/assets/img/linter/eslint.png)
-
 Após isso, será criado um arquivo chamado `.eslintrc` dentro da pasta raiz do seu projeto, contendo informações parecidas com:
 
 {% highlight js %}
@@ -129,8 +127,6 @@ Tendo já o arquivo, basta você rodar no terminal em cima do arquivo desejado e
 
 Se eu rodar o `eslint` no terminal analisando esse código, ele vai me retornar os seguintes erros:
 
-![imagem mostrando os erros como variável não utilizada e falta de ponto e vírgula](/assets/img/linter/erro-1.png)
-
 Eu criei uma variável `a`, mas nunca utilizei no meu código, eu usei console.log num código que vai para produção e ainda esqueci de colocar o ponto e vírgula no final do código!
 
 Para um código pequeno desses, talvez não fizesse diferença, mas pense num código beeeem maior, ele pode ser uma mão na roda =D
@@ -143,15 +139,9 @@ Primeiro de tudo, espero que você tenha instalado o [Package Control](https://p
 
 Feito isso, reinicie o seu Sublime e comece a escrever seu código JS! Quando tiver algum erro, ele irá te notificar com marcadores ao lado do erro e na parte inferior irá te avisar o erro. Como na imagem abaixo:
 
-![Sublime indicando os erros](/assets/img/linter/sublime.png)
-
 Se você for como eu e quiser ver todos os erros numa lista e poder navegar entre eles, aperte `cmd + shift + p` ou `ctrl + shift + p` e digite `linter show` e você verá uma opção igual da tela abaixo:
 
-![Opção](/assets/img/linter/show.png)
-
 Com essa opção selecionada, cada vez que você salvar o código, irá ver uma lista da seguinte forma:
-
-![Lista de erros](/assets/img/linter/errors-list.png)
 
 ## Habilitando o Sublime para entender código ES6 + Eslint
 
