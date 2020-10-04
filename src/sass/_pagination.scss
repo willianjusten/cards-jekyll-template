@@ -1,0 +1,32 @@
+.pagination {
+  width: $content-width;
+  max-width: $content-max-width;
+  margin: 20px auto;
+
+  >.prev {
+    float: left;
+    width: 50%;
+  }
+
+  >.next {
+    float: right;
+    text-align: right;
+    width: 50%;
+  }
+
+  a {
+    font-size: 14px;
+    color: var(--theme-color);
+    display: inline-block;
+    border: 1px solid var(--theme-color);
+    border-radius: 5px;
+    padding: 4px 10px;
+    margin-right: 2px;
+    text-decoration: none;
+   
+    &:hover {
+      color: $sec;
+      background: var(--theme-color);
+    }
+  }
+}

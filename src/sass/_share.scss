@@ -1,5 +1,7 @@
 .share {
-  @include center(800px);
+  width: $content-width;
+  max-width: $content-max-width;
+  margin: 0 auto;
   text-align: center;
   border-top: 1px solid #f2f2f2;
   padding-top: 20px;
@@ -16,5 +18,9 @@
   a {
     text-decoration: none;
     border: none;
+
+    &:hover svg {
+      fill: var(--theme-color);
+    }
   }
 }

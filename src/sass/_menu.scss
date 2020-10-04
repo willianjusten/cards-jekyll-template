@@ -6,6 +6,14 @@ a,aside,.overlay,body {
   transition: all .25s ease;
 }
 
+aside {
+  background: var(--theme-color);
+
+  nav li a:hover {
+    color: var(--theme-color);
+  }
+}
+
 .header-control {
   border: none;
   background: transparent;
@@ -32,7 +40,7 @@ a,aside,.overlay,body {
 
 .icon-menu {
   @include size(40px, 40px);
-  fill: $main;
+  fill: var(--theme-color);
 }
 
 .icon-search {
@@ -55,7 +63,7 @@ aside {
   padding: 40px 0 0;
   top: 0;
   right: -240px;
-  background-color: $main;
+  background-color: var(--theme-color);
   z-index: 0;
   box-shadow: inset -10px -1px 15px -9px rgba(0,0,0,0.5);
 
@@ -86,7 +94,7 @@ aside {
     border-top: 1px solid $sec;
 
     &:hover {
-      color: $main;
+      color: var(--theme-color);
       background: $sec;
     }
   }

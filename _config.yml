@@ -42,5 +42,11 @@ sass:
   sass_dir: src/sass
   style: :compressed # You might prefer to minify using :compressed, default :expanded
 
+paginate: 12
+paginate_path: /page:num/
+
+plugins:
+  - jekyll-paginate
+
 # exclude my node related stuff
 exclude: ['package.json', 'src', 'node_modules']

@@ -34,7 +34,7 @@
       color: black;
       font-size: 30px;
       &:hover {
-        color: $main;
+        color: var(--theme-color);
       }
     }  
   } 
@@ -48,7 +48,7 @@
   .email,
   .github {
     text-decoration: none;
-    color: $main;
+    color: var(--theme-color);
   }
 }
 

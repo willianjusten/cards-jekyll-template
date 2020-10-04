@@ -17,6 +17,7 @@ main {
   margin-top: 0;
   text-transform: uppercase;
   padding: 0 15px;
+  color: var(--theme-color);
 }
 
 .box-item {
@@ -52,7 +53,7 @@ main {
       margin: 5px 0 15px;
       font-size: 20px;
       @include main-font(800);
-      color: $main;
+      color: var(--theme-color);
     }
     p {
       margin: 0 0 20px;
@@ -61,12 +62,18 @@ main {
       line-height: 22px;
     }
     .tags a {
-      color: $main;
+      color: var(--theme-color);
       padding: 5px 10px;
       border-radius: 3px;
+      border: 1px solid var(--theme-color);
       display: inline-block;
       margin: 0 0 5px;
       z-index: 50;
+
+      &:hover {
+        color: $sec;
+        background: var(--theme-color);
+      }
     }
   }
 }
@@ -92,7 +99,7 @@ main {
     -webkit-transform: rotate(45deg);
     width: 100px;
     display: block;
-    background: #B31917;
+    background-color: var(--theme-color);
     position: absolute;
     top: 19px; 
     right: -21px;
@@ -107,18 +114,18 @@ main {
 
     &:before {
       left: 0;
-      border-left: 3px solid $main;
+      border-left: 3px solid var(--theme-darken-color-15);
       border-right: 3px solid transparent;
       border-bottom: 3px solid transparent;
-      border-top: 3px solid $main;
+      border-top: 3px solid var(--theme-darken-color-15);
     }
 
     &:after {
       right: 0;
       border-left: 3px solid transparent;
-      border-right: 3px solid $main;
+      border-right: 3px solid var(--theme-darken--color-15);
       border-bottom: 3px solid transparent;
-      border-top: 3px solid $main;
+      border-top: 3px solid var(--theme-darken-color-15);
     }
   }
 }

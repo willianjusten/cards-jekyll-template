@@ -17,7 +17,7 @@
     &:hover {
       background: $sec;
       .icon {
-        fill: $main;
+        fill: var(--theme-color);
       }
     }
   }

@@ -1,9 +1,7 @@
 ---
 layout: post
-comments: true
 title: "Most Popular Resources for Developers"
 date: 2020-09-15 22:11:45
-image: '/assets/img/'
 description: "Most Popular Resources for Developers"
 main-class: 'resources'
 color: '#FF4C89'

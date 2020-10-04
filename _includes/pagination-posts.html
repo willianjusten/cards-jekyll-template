@@ -1,0 +1,7 @@
+{% if site.posts.size == 0 %}
+  <h2>No post found</h2>
+{% endif %}
+
+{% for post in paginator.posts %}
+  {% include single-post.html %}
+{% endfor %}

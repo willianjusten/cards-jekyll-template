@@ -5,9 +5,9 @@
     
     a {
       font-size: 14px;
-      color: $main;
+      color: var(--theme-color);
       display: inline-block;
-      border: 1px solid $main;
+      border: 1px solid var(--theme-color);
       border-radius: 5px;
       padding: 4px 10px;
       margin-right: 2px;
@@ -16,7 +16,7 @@
       
       &:hover {
         color: darken($main, 15%);
-        border: 1px solid darken($main, 15%);
+        border: 1px solid var(--theme-darken-color-15);
         background: #fff;
       }
     }

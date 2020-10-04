@@ -11,10 +11,27 @@
             </article>
 
             {% include share.html %}
-            {% include author.html %}
-            {% if page.comments != false %} 
+
+            <div class="pagination">
+                {% if page.previous.url %}
+                  <span class="prev" >
+                      <a href="{{ site.url }}{{ site.baseurl }}{{ page.previous.url }}">
+                        ⟨ {{ page.previous.title }}
+                      </a>
+                  </span>
+                {% endif %}
+                {% if page.next.url %}
+                  <span class="next" >
+                      <a href="{{ site.url }}{{ site.baseurl }}{{ page.next.url }}">
+                        {{ page.next.title }} ⟩
+                      </a>
+                  </span>
+                {% endif %}
+            </div>
+            <!-- {% include author.html %} -->
+            <!-- {% if page.comments != false %} 
                 {% include comments.html %}
-            {% endif %}
+            {% endif %} -->
             {% include footer.html %}
         </section>
     </body>

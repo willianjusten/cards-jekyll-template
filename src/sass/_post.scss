@@ -13,12 +13,13 @@
 
 .post {
   position: relative;
-  top: 500px;
-  background: #fff
 }
 
 .post-content {
   padding: 40px 0;
+  width: $content-width;
+  max-width: 90%;
+  margin: 0 auto;
 
   img {
     max-width: 100%;
@@ -27,13 +28,15 @@
   }
 
   p, h1, h2, h3, h4,ul,ol, .tags, iframe, .button-post {
-    @include center(800px);
-    padding: 0 20px;
     margin: 0 auto 30px;
     @include main-font(300);
     font-size: 18px;
     line-height: 2;
-    letter-spacing: .01rem;
+    letter-spacing: 0.16px;
+  }
+
+  h1, h2, h3, h4, h5, h6, strong {
+    color: var(--theme-color);
   }
 
   li {
@@ -48,28 +51,28 @@
     color: $texts;
 
     code {
-      color: $main;
+      color: var(--theme-color);
       word-wrap: break-word;
     }
   }
 
   a {
-    color: $main;
-    border-bottom: 2px dashed $main;
+    color: var(--theme-color);
+    border-bottom: 2px dashed var(--theme-color);
     @include main-font(300);
     text-decoration: none;
-    transition: background .3s, color .3s;
+    transition: background-color .3s, color .3s;
 
     &:hover {
       color: #fff;
-      background: $main;
+      background-color: var(--theme-color);
     }
   }
 
   .externalLink:after {
     display: inline-block;
     content: '';
-    color: $main;
+    color: var(--theme-color);
     background-image: url("../img/external.svg");
     background-size: 100%;
     margin-left: 5px;
@@ -86,7 +89,7 @@
     margin: auto !important;
   }
 
-  h1,h2,h3,h4,h5 {
+  h1,h2,h3,h4,h5,h6 {
     @include main-font(800);
     line-height: 1.4;
   }
@@ -112,8 +115,7 @@
   }
 
   blockquote {
-    @include center(730px);
-    border-left: 5px solid #005f97;
+    border-left: 5px solid var(--theme-color);
     padding: 0 30px;
     margin: 50px auto;
     width: 90%;
@@ -128,7 +130,6 @@
   }
 
   hr {
-    @include center(760px);
     border: 1px solid #f2f2f2;
     margin: 50px auto;
   }
@@ -165,8 +166,8 @@
       text-decoration: none;
       transition: all .5s;
       &:hover {
-        color: darken($main, 20%);
-        border-bottom: 1px solid darken($main, 2%);
+        color: var(--theme-darken-color-15);
+        border-bottom: 1px solid var(--theme-darken-color-15);
         background: #fff;
       }
     }
@@ -183,7 +184,6 @@
   @include main-font(300);
   font-size: 36px;
   margin-top: 60px;
-  @include center(800px);
   font-size: 28px;
   margin-top: 20px;
   padding: 0 20px;
@@ -192,9 +192,6 @@
 @media only screen and (min-width: $cut) {
 
   .post-content {
-    // p, h1, h2, h3, h4,ul,ol, .tags, iframe, .button-post {
-    //   font-size: 20px
-    // }
 
     ul.post-list.svg-serie p {
       padding: 0;
