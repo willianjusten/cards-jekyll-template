@@ -7,6 +7,8 @@
         {% endif %}
         <h1 class="post-title" itemprop="name">{{ page.title }}</h1>
         <p itemprop="description" class="subtitle">{{ page.description }}</p>
-        <span class="reading-time">{% include reading-time.html %}</span>
+        {% if page.date %}
+            <span class="reading-time">{% include reading-time.html %}</span>
+        {% endif %}
     </div>
 </header>
