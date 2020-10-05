@@ -12,10 +12,12 @@
             <!-- <aside>
               <strong>Sidebar</strong>
             </aside> -->
-            <!-- {% include author.html %} -->
-            <!-- {% if page.comments != false %} 
+            {% if site.author != false %} 
+              {% include author.html %}
+            {% endif %}
+            {% if page.comments != false and site.comments != false %} 
                 {% include comments.html %}
-            {% endif %} -->
+            {% endif %}
         </main>
         {% include share.html %}
 
