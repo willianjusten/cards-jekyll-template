@@ -2,6 +2,7 @@ html,
 body {
   height: 100%;
   font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
   --theme-color: #{$main};
   --theme-darken-color-10: #{$main-darken-10};
   --theme-darken-color-15: #{$main-darken-15};

@@ -1,7 +1,8 @@
 // COLORS
 $main: #005F97;
-$main-darken-10: darken(#005F97, 10%);
-$main-darken-15: darken(#005F97, 15%);
+$main: #2c2c2c;
+$main-darken-10: darken($main, 10%);
+$main-darken-15: darken($main, 15%);
 $sec: #FFFFFF;
 $lightGray: #F2F2F2;
 $texts: #333333;
