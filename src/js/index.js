@@ -1,11 +1,12 @@
-var azepto = require('./azepto');
+var azepto = require('./azepto'); // TODO: remove
 var classie = require('./classie');
-// var scrollanimation = require('scrollanimation');
-var simpleJekyllSearch = require('./simpleJekyllSearch');
-// var smoothscroll = require('smoothscroll');
+// var scrollanimation = require('scrollanimation'); // TODO: remove?
+var simpleJekyllSearch = require('./simpleJekyllSearch'); // TODO: refactor to vanilla JS
+// var smoothscroll = require('smoothscroll'); // TODO: remove?
 var targetBlank = require('./targetBlank');
-var zmain = require('./zmain');
+var zmain = require('./zmain'); // TODO: refactor to vanilla JS
 var headingLinks = require('./headingLinks');
+// TODO: add dark theme switch
 
 azepto();
 classie(window);
