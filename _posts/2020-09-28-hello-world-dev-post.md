@@ -1,5 +1,5 @@
 ---
-layout: blog
+layout: post
 title: Hello World Dev post
 date: 2020-09-27T22:17:57.858Z
 description: This is a netlify test blog post
@@ -14,10 +14,16 @@ categories:
 Hello
 
 This is a Jekyll + Netlify + NetlifyCMS blog post
+This is a simple and minimalist template for Jekyll designed for developers that want to write blog posts but don't want to care about frontend stuff.
+This is a simple and minimalist template for Jekyll designed for developers that want to write blog posts but don't want to care about frontend stuff.
 
 ![Hello](/assets/img/blog-image.png)
 
-Hoorrayy lorem  
+Hoorrayy lorem  This is a simple and minimalist template for Jekyll designed for developers that want to write blog posts but don't want to care about frontend stuff.
+
+This is a simple and minimalist template for Jekyll designed for developers that want to write blog posts but don't want to care about frontend stuff.
+
+This is a simple and minimalist template for Jekyll designed for developers that want to write blog posts but don't want to care about frontend stuff.
 
 ```javascript
 var hello = "Helo World";
@@ -28,7 +34,15 @@ console.log(string); // "Helo World"
 
 In most browsers, the placeholder text is grey. To change this, style the placeholder with the non-standard `::placeholder` selector. Note that Firefox adds a lower opacity to the placeholder, so we use `opacity: 1` to fix this.
 
-ddfdas
+This is a simple and minimalist template for Jekyll designed for developers that want to write blog posts but don't want to care about frontend stuff.
+
+This is a simple and minimalist template for Jekyll designed for developers that want to write blog posts but don't want to care about frontend stuff.
+This is a simple and minimalist template for Jekyll designed for developers that want to write blog posts but don't want to care about frontend stuff.
+
+
+This is a simple and minimalist template for Jekyll designed for developers that want to write blog posts but don't want to care about frontend stuff.
+
+This is a simple and minimalist template for Jekyll designed for developers that want to write blog posts but don't want to care about frontend stuff.ddfdas
 
 ## Another heading eading 2
 

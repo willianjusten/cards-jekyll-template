@@ -4,35 +4,37 @@
     <body>
         {% include svg-icons.html %}
         {% include header-post.html %}
-        <section class="post">
+        <main class="post">
 
             <article role="article" id="post" class="post-content" itemprop="articleBody">
                 {{ content }}
             </article>
-
-            {% include share.html %}
-
-            <div class="pagination">
-                {% if page.previous.url %}
-                  <span class="prev" >
-                      <a href="{{ site.url }}{{ site.baseurl }}{{ page.previous.url }}">
-                        ⟨ {{ page.previous.title }}
-                      </a>
-                  </span>
-                {% endif %}
-                {% if page.next.url %}
-                  <span class="next" >
-                      <a href="{{ site.url }}{{ site.baseurl }}{{ page.next.url }}">
-                        {{ page.next.title }} ⟩
-                      </a>
-                  </span>
-                {% endif %}
-            </div>
+            <!-- <aside>
+              <strong>Sidebar</strong>
+            </aside> -->
             <!-- {% include author.html %} -->
             <!-- {% if page.comments != false %} 
                 {% include comments.html %}
             {% endif %} -->
-            {% include footer.html %}
-        </section>
+        </main>
+        {% include share.html %}
+
+        <div class="pagination">
+            {% if page.previous.url %}
+              <span class="prev" >
+                  <a href="{{ site.url }}{{ site.baseurl }}{{ page.previous.url }}">
+                    ⟨ {{ page.previous.title }}
+                  </a>
+              </span>
+            {% endif %}
+            {% if page.next.url %}
+              <span class="next" >
+                  <a href="{{ site.url }}{{ site.baseurl }}{{ page.next.url }}">
+                    {{ page.next.title }} ⟩
+                  </a>
+              </span>
+            {% endif %}
+        </div>
+        {% include footer.html %}
     </body>
 </html>

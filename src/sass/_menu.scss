@@ -2,11 +2,11 @@
   box-sizing: border-box;
 }
 
-a,aside,.overlay,body {
+a,.mobile-menu,.overlay,body {
   transition: all .25s ease;
 }
 
-aside {
+.mobile-menu {
   background: var(--theme-color);
 
   nav li a:hover {
@@ -56,7 +56,7 @@ aside {
   fill: #fff;
 }
 
-aside {
+.mobile-menu {
   position: fixed;
   height: 100%;
   width: 240px;

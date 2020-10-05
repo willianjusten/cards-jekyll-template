@@ -13,6 +13,7 @@
 
 .post {
   position: relative;
+  padding: 0;
 }
 
 .post-content {
@@ -89,9 +90,20 @@
     margin: auto !important;
   }
 
+  .heading-link {
+    display: none;
+    margin: 0 0 0 7px;
+  }
+
   h1,h2,h3,h4,h5,h6 {
     @include main-font(800);
     line-height: 1.4;
+
+    &:hover {
+      .heading-link {
+        display: initial;
+      }
+    }
   }
 
   h1 {

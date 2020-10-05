@@ -5,6 +5,7 @@ var simpleJekyllSearch = require('./simpleJekyllSearch');
 // var smoothscroll = require('smoothscroll');
 var targetBlank = require('./targetBlank');
 var zmain = require('./zmain');
+var headingLinks = require('./headingLinks');
 
 azepto();
 classie(window);
@@ -13,3 +14,4 @@ simpleJekyllSearch(Zepto);
 // smoothscroll();
 targetBlank();
 zmain(Zepto, window);
+headingLinks();
