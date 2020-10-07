@@ -13,6 +13,12 @@ github_username:  lorem_ipsum
 gplus_username:  lorem_ipsum
 disqus_username: lorem_ipsum
 
+# Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
+# google_analytics: UA-129179896-1
+
+# Enter your Google Webmaster Tools web tracking code (e.g. 2D5zbZ2Vatb8CeFj1cUCRdJZ3SQatSUlQesml02jEPo) to activate tracking
+# google_verify: v3OZmTaPJYaCo3Jb_bgy1VrMyB3w5fKXZTTEP1eRgyw
+
 # Build settings
 markdown: kramdown
 highlighter: rouge
